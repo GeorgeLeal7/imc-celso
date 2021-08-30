@@ -27,6 +27,7 @@
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/edit_peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_background"
@@ -39,9 +40,13 @@
         android:textColorHint="@color/white"
         android:textSize="24sp"
         android:textColor="@color/white"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:drawableStart="@drawable/fitness_center_24"
+        android:drawableTint="@color/white"
+        android:drawablePadding="16dp"/>
 
     <EditText
+        android:id="@+id/edit_altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_background"
@@ -55,9 +60,12 @@
         android:textSize="24sp"
         android:textColor="@color/white"
         android:inputType="numberDecimal"
-        />
+        android:drawableStart="@drawable/altura"
+        android:drawableTint="@color/white"
+        android:drawablePadding="16dp"/>
 
     <Button
+        android:id="@+id/button_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcular"
@@ -70,8 +78,16 @@
         android:textAllCaps="false"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="21,9"/>
+        android:id="@+id/text_view__resultado"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="21,9"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textSize="48sp"
+        android:background="@drawable/edit_result_background"
+        android:gravity="center"
+        android:textStyle="bold"/>
 
 </LinearLayout>
